@@ -1,4 +1,5 @@
 kml_layers = [
+  'amtrak',
   'mbta-cr',
   'bart',
   'path',
