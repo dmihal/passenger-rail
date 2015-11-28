@@ -2,7 +2,22 @@
 <html>
   <head>
     <title>Passenger Rail Map</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
   </head>
   <body>
+    <div id="map"></div>
+    <script src="app.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHdxAFJ_DEE9t4HaAYJboHP6G8pdakeMY&signed_in=true&callback=initMap">
+    </script>
   </body>
 </html>
