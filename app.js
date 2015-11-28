@@ -4,8 +4,8 @@ function initMap() {
     center: {lat: 41.876, lng: -87.624}
   });
 
-  var ctaLayer = new google.maps.KmlLayer({
-    url: 'kml/mbta.kml',
+  var kml = new google.maps.KmlLayer({
+    url: location.href + 'kml/mbta-cr.kml',
     map: map
   });
 }
