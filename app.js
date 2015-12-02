@@ -3,7 +3,10 @@ kml_layers = [
   'mbta-cr',
   'bart',
   'path',
-  'septa'
+  'septa',
+  'lirr',
+  'mta',
+  'metro-north'
 ];
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
