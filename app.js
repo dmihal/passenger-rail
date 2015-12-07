@@ -3,13 +3,14 @@ kml_layers = [
   'bart',
   'cta',
   'dc-metro',
+  'mbta',
   'mbta-cr',
+  'metro-north',
   'path',
   'rta',
   'septa',
   'lirr',
   'mta',
-  'metro-north',
   'uta'
 ];
 function initMap() {
