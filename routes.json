@@ -1,0 +1,87 @@
+[
+  {
+    "name": "amtrak",
+    "title": "Amtrak",
+    "type": "innercity"
+  },
+  {
+    "name": "bart",
+    "title": "BART",
+    "type": "transit"
+  },
+  {
+    "name": "caltrain",
+    "title": "CalTrain",
+    "type": "commuter"
+  },
+  {
+    "name": "cta",
+    "title": "CTA",
+    "type": "transit"
+  },
+  {
+    "name": "dart",
+    "title": "DART",
+    "type": "transit"
+  },
+  {
+    "name": "dc-metro",
+    "title": "DC Metro",
+    "type": "transit"
+  },
+  {
+    "name": "lirr",
+    "title": "Long Island Railroad",
+    "type": "commuter"
+  },
+  {
+    "name": "mbta",
+    "title": "MBTA",
+    "type": "transit"
+  },
+  {
+    "name": "mbta-cr",
+    "title": "MBTA Commuter Rail",
+    "type": "commuter"
+  },
+  {
+    "name": "metro-north",
+    "title": "Metro North",
+    "type": "commuter"
+  },
+  {
+    "name": "mta",
+    "title": "MTA",
+    "type": "transit"
+  },
+  {
+    "name": "muni",
+    "title": "Muni",
+    "type": "transit"
+  },
+  {
+    "name": "path",
+    "title": "PATH",
+    "type": "transit"
+  },
+  {
+    "name": "rta",
+    "title": "RTA",
+    "type": "commuter"
+  },
+  {
+    "name": "septa",
+    "title": "SEPTA",
+    "type": "transit"
+  },
+  {
+    "name": "uta",
+    "title": "UTA",
+    "type": "transit"
+  },
+  {
+    "name": "vta",
+    "title": "VTA",
+    "type": "transit"
+  }
+]

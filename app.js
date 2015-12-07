@@ -1,33 +1,26 @@
-kml_layers = [
-  'ace',
-  'amtrak',
-  'bart',
-  'caltrain',
-  'cta',
-  'dart',
-  'dc-metro',
-  'lirr',
-  'mbta',
-  'mbta-cr',
-  'metro-north',
-  'muni',
-  'path',
-  'rta',
-  'septa',
-  'mta',
-  'uta',
-  'vta'
-];
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 11,
     center: {lat: 41.876, lng: -87.624}
   });
   fetchStyle(map);
-
-  var layers = kml_layers.map(function(name){
+  fetchRoutes(map);
+}
+function fetchRoutes(map){
+  var request = new XMLHttpRequest();
+  request.open('GET', 'routes.json', true);
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var data = JSON.parse(request.responseText);
+      addRoutes(data, map);
+    }
+  };
+  request.send();
+}
+function addRoutes(data, map){
+  var layers = data.map(function(route_data){
     return new google.maps.KmlLayer({
-      url: location.href + 'kml/' + name + '.kml',
+      url: location.href + 'kml/' + route_data.name + '.kml',
       map: map
     });
   });
