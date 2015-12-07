@@ -2,14 +2,15 @@ kml_layers = [
   'amtrak',
   'bart',
   'cta',
+  'dart',
   'dc-metro',
+  'lirr',
   'mbta',
   'mbta-cr',
   'metro-north',
   'path',
   'rta',
   'septa',
-  'lirr',
   'mta',
   'uta'
 ];
