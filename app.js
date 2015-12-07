@@ -13,6 +13,7 @@ function initMap() {
     zoom: 11,
     center: {lat: 41.876, lng: -87.624}
   });
+  fetchStyle(map);
 
   var layers = kml_layers.map(function(name){
     return new google.maps.KmlLayer({
@@ -20,4 +21,15 @@ function initMap() {
       map: map
     });
   });
+}
+function fetchStyle(map){
+  var request = new XMLHttpRequest();
+  request.open('GET', 'map-style.json', true);
+  request.onload = function() {
+    if (request.status >= 200 && request.status < 400) {
+      var data = JSON.parse(request.responseText);
+      map.setOptions({styles: data});
+    }
+  };
+  request.send();
 }
