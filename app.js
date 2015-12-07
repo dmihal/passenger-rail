@@ -1,6 +1,8 @@
 kml_layers = [
+  'ace',
   'amtrak',
   'bart',
+  'caltrain',
   'cta',
   'dart',
   'dc-metro',
@@ -8,11 +10,13 @@ kml_layers = [
   'mbta',
   'mbta-cr',
   'metro-north',
+  'muni',
   'path',
   'rta',
   'septa',
   'mta',
-  'uta'
+  'uta',
+  'vta'
 ];
 function initMap() {
   var map = new google.maps.Map(document.getElementById('map'), {
