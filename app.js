@@ -1,9 +1,11 @@
 kml_layers = [
   'amtrak',
+  'bart',
+  'cta',
   'dc-metro',
   'mbta-cr',
-  'bart',
   'path',
+  'rta',
   'septa',
   'lirr',
   'mta',
