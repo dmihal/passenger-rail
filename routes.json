@@ -40,6 +40,11 @@
     "type": "commuter"
   },
   {
+    "name": "lacmta",
+    "title": "LA County MTA",
+    "type": "transit"
+  },
+  {
     "name": "lirr",
     "title": "Long Island Railroad",
     "type": "commuter"
@@ -57,6 +62,11 @@
   {
     "name": "metro-north",
     "title": "Metro North",
+    "type": "commuter"
+  },
+  {
+    "name": "metrolink",
+    "title": "MetroLink",
     "type": "commuter"
   },
   {
@@ -83,6 +93,11 @@
     "name": "septa",
     "title": "SEPTA",
     "type": "transit"
+  },
+  {
+    "name": "sle",
+    "title": "Shore Line East",
+    "type": "commuter"
   },
   {
     "name": "uta",
