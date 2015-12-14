@@ -75,9 +75,19 @@
     "type": "transit"
   },
   {
+    "name": "mts",
+    "title": "MTS",
+    "type": "transit"
+  },
+  {
     "name": "muni",
     "title": "Muni",
     "type": "transit"
+  },
+  {
+    "name": "nctd",
+    "title": "NCTD",
+    "type": "commuter"
   },
   {
     "name": "path",
