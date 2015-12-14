@@ -38,23 +38,24 @@ Route = function(data, map){
   this.name = data.name;
   this.title = data.title;
   this.type = data.type;
-  this.bounds = data.bounds ?
-      (new google.maps.LatLngBounds()).union(data.bounds) : null;
   this.map = map;
 
   this.kmlLayer = new google.maps.KmlLayer({
     url: location.href + 'kml/' + this.name + '.kml',
     preserveViewport: true,
-    map: map
+    map: null
   });
 
   google.maps.event.addListener(map, 'idle',
       this.calculateVisibility.bind(this));
+
+  this.calculateVisibility();
 };
 Route.prototype.calculateVisibility = function(){
-  var mapValue = this.map;
-  if (this.bounds && !this.bounds.intersects(this.map.getBounds())) {
-    mapValue = null;
+  var mapValue = null;
+  if (this.kmlLayer.getStatus() == google.maps.KmlLayerStatus.OK &&
+      this.getDefaultViewport().intersects(this.map.getBounds())) {
+    mapValue = this.map;
   }
   this.kmlLayer.setMap(mapValue);
 };
