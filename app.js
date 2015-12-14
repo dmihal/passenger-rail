@@ -45,11 +45,13 @@ Route = function(data, map){
   this.kmlLayer = new google.maps.KmlLayer({
     url: location.href + 'kml/' + this.name + '.kml',
     preserveViewport: true,
-    map: map
+    map: null
   });
 
   google.maps.event.addListener(map, 'idle',
       this.calculateVisibility.bind(this));
+
+  this.calculateVisibility();
 };
 Route.prototype.calculateVisibility = function(){
   var mapValue = this.map;
