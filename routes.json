@@ -50,6 +50,11 @@
     "type": "commuter"
   },
   {
+    "name": "marta",
+    "title": "MARTA",
+    "type": "transit"
+  },
+  {
     "name": "mbta",
     "title": "MBTA",
     "type": "transit"
@@ -97,6 +102,11 @@
   {
     "name": "njtransit",
     "title": "NJ Transit",
+    "type": "commuter"
+  },
+  {
+    "name": "nmrx",
+    "title": "New Mexico Rail Runner Express",
     "type": "commuter"
   },
   {
