@@ -51,8 +51,17 @@ Route = function(data, map){
 };
 Route.prototype.calculateVisibility = function(){
   var mapValue = null;
-  if (this.map.getBounds().intersects(this.kmlLayer.getDefaultViewport())) {
+  var layerBounds = this.kmlLayer.getDefaultViewport();
+  if (!layerBounds){
+    return;
+  }
+  var mapBounds = this.map.getBounds();
+  var areaRatio = getArea(mapBounds.toSpan()) / getArea(layerBounds.toSpan());
+  if (mapBounds.intersects(layerBounds) && areaRatio < 250) {
     mapValue = this.map;
   }
   this.kmlLayer.setMap(mapValue);
+};
+var getArea = function(latLngSpan){
+  return latLngSpan.lat() * latLngSpan.lng();
 };
