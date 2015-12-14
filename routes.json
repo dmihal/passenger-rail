@@ -50,6 +50,11 @@
     "type": "commuter"
   },
   {
+    "name": "marc",
+    "title": "MARC",
+    "type": "commuter"
+  },
+  {
     "name": "marta",
     "title": "MARTA",
     "type": "transit"
@@ -63,6 +68,11 @@
     "name": "mbta-cr",
     "title": "MBTA Commuter Rail",
     "type": "commuter"
+  },
+  {
+    "name": "mdot",
+    "title": "MDOT",
+    "type": "transit"
   },
   {
     "name": "metro-north",
@@ -148,6 +158,11 @@
     "name": "uta",
     "title": "UTA",
     "type": "transit"
+  },
+  {
+    "name": "vre",
+    "title": "VRE",
+    "type": "commuter"
   },
   {
     "name": "vta",
