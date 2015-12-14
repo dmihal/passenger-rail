@@ -7,7 +7,13 @@
   {
     "name": "bart",
     "title": "BART",
-    "type": "transit"
+    "type": "transit",
+    "bounds": {
+      "south":37.556683,
+      "west":-122.47116900000003,
+      "north":38.023869,
+      "east":-121.895714
+    }
   },
   {
     "name": "caltrain",

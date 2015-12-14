@@ -19,10 +19,18 @@ function fetchRoutes(map){
 }
 function addRoutes(data, map){
   var layers = data.map(function(route_data){
-    return new google.maps.KmlLayer({
+    var layer = new google.maps.KmlLayer({
       url: location.href + 'kml/' + route_data.name + '.kml',
       map: map
     });
+    if (route_data.bounds){
+      var bounds = (new google.maps.LatLngBounds()).union(route_data.bounds);
+      google.maps.event.addListener(map, 'idle', function() {
+        var mapValue = map.getBounds().intersects(bounds) ? map : null;
+        layer.setMap(mapValue);
+      });
+    }
+    return layer;
   });
 }
 function fetchStyle(map){
