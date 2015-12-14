@@ -25,6 +25,11 @@
     "type": "commuter"
   },
   {
+    "name": "capmetro",
+    "title": "Capital MetroRail",
+    "type": "commuter"
+  },
+  {
     "name": "cta",
     "title": "CTA",
     "type": "transit"
@@ -105,6 +110,11 @@
     "type": "transit"
   },
   {
+    "name": "music-city",
+    "title": "Music City Star",
+    "type": "commuter"
+  },
+  {
     "name": "nctd",
     "title": "NCTD",
     "type": "commuter"
@@ -128,6 +138,11 @@
     "name": "nmrx",
     "title": "New Mexico Rail Runner Express",
     "type": "commuter"
+  },
+  {
+    "name": "pat",
+    "title": "PAT",
+    "type": "transit"
   },
   {
     "name": "path",
@@ -160,6 +175,11 @@
     "type": "commuter"
   },
   {
+    "name": "tide",
+    "title": "The Tide",
+    "type": "transit"
+  },
+  {
     "name": "trimet",
     "title": "TriMet",
     "type": "transit"
@@ -167,6 +187,11 @@
   {
     "name": "uta",
     "title": "UTA",
+    "type": "transit"
+  },
+  {
+    "name": "valley-metro",
+    "title": "Metro Light Rail",
     "type": "transit"
   },
   {
