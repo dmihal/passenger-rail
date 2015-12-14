@@ -12,7 +12,7 @@
   {
     "name": "bart",
     "title": "BART",
-    "type": "transit",
+    "type": "transit"
   },
   {
     "name": "caltrain",
