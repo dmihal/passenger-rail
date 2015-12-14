@@ -21,6 +21,7 @@ function addRoutes(data, map){
   var layers = data.map(function(route_data){
     var layer = new google.maps.KmlLayer({
       url: location.href + 'kml/' + route_data.name + '.kml',
+      preserveViewport: true,
       map: map
     });
     if (route_data.bounds){
