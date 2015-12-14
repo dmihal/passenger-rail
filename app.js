@@ -19,19 +19,7 @@ function fetchRoutes(map){
 }
 function addRoutes(data, map){
   var layers = data.map(function(route_data){
-    var layer = new google.maps.KmlLayer({
-      url: location.href + 'kml/' + route_data.name + '.kml',
-      preserveViewport: true,
-      map: map
-    });
-    if (route_data.bounds){
-      var bounds = (new google.maps.LatLngBounds()).union(route_data.bounds);
-      google.maps.event.addListener(map, 'idle', function() {
-        var mapValue = map.getBounds().intersects(bounds) ? map : null;
-        layer.setMap(mapValue);
-      });
-    }
-    return layer;
+    return new Route(route_data, map);
   });
 }
 function fetchStyle(map){
@@ -45,3 +33,28 @@ function fetchStyle(map){
   };
   request.send();
 }
+
+Route = function(data, map){
+  this.name = data.name;
+  this.title = data.title;
+  this.type = data.type;
+  this.bounds = data.bounds ?
+      (new google.maps.LatLngBounds()).union(data.bounds) : null;
+  this.map = map;
+
+  this.kmlLayer = new google.maps.KmlLayer({
+    url: location.href + 'kml/' + this.name + '.kml',
+    preserveViewport: true,
+    map: map
+  });
+
+  google.maps.event.addListener(map, 'idle',
+      this.calculateVisibility.bind(this));
+};
+Route.prototype.calculateVisibility = function(){
+  var mapValue = this.map;
+  if (this.bounds && !this.bounds.intersects(this.map.getBounds())) {
+    mapValue = null;
+  }
+  this.kmlLayer.setMap(mapValue);
+};
