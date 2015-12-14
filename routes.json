@@ -15,6 +15,11 @@
     "type": "transit"
   },
   {
+    "name": "bsda",
+    "title": "BSDA",
+    "type": "transit"
+  },
+  {
     "name": "caltrain",
     "title": "CalTrain",
     "type": "commuter"
@@ -102,6 +107,11 @@
   {
     "name": "nctd",
     "title": "NCTD",
+    "type": "commuter"
+  },
+  {
+    "name": "nictd",
+    "title": "NICTD",
     "type": "commuter"
   },
   {
