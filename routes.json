@@ -115,6 +115,11 @@
     "type": "transit"
   },
   {
+    "name": "rt",
+    "title": "RT",
+    "type": "transit"
+  },
+  {
     "name": "rta",
     "title": "RTA",
     "type": "commuter"
@@ -128,6 +133,11 @@
     "name": "sle",
     "title": "Shore Line East",
     "type": "commuter"
+  },
+  {
+    "name": "trimet",
+    "title": "TriMet",
+    "type": "transit"
   },
   {
     "name": "uta",
