@@ -43,18 +43,15 @@ Route = function(data, map){
   this.kmlLayer = new google.maps.KmlLayer({
     url: location.href + 'kml/' + this.name + '.kml',
     preserveViewport: true,
-    map: null
+    map: map
   });
 
   google.maps.event.addListener(map, 'idle',
       this.calculateVisibility.bind(this));
-
-  this.calculateVisibility();
 };
 Route.prototype.calculateVisibility = function(){
   var mapValue = null;
-  if (this.kmlLayer.getStatus() == google.maps.KmlLayerStatus.OK &&
-      this.getDefaultViewport().intersects(this.map.getBounds())) {
+  if (this.map.getBounds().intersects(this.kmlLayer.getDefaultViewport())) {
     mapValue = this.map;
   }
   this.kmlLayer.setMap(mapValue);
