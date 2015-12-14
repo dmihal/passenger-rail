@@ -90,6 +90,16 @@
     "type": "commuter"
   },
   {
+    "name": "njt-lr",
+    "title": "NJ Transit Light Rail",
+    "type": "transit"
+  },
+  {
+    "name": "njtransit",
+    "title": "NJ Transit",
+    "type": "commuter"
+  },
+  {
     "name": "path",
     "title": "PATH",
     "type": "transit"
