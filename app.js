@@ -57,10 +57,15 @@ Route.prototype.calculateVisibility = function(){
   }
   var mapBounds = this.map.getBounds();
   var areaRatio = getArea(mapBounds.toSpan()) / getArea(layerBounds.toSpan());
-  if (mapBounds.intersects(layerBounds) && areaRatio < 250) {
-    mapValue = this.map;
+  var mapVisible = (mapBounds.intersects(layerBounds) && areaRatio < 250);
+  this.setVisibility(mapVisible);
+};
+Route.prototype.setVisibility = function(visible) {
+  if (visible && this.kmlLayer.getMap() == null) {
+    this.kmlLayer.setMap(this.map);
+  } else if (!visible && this.kmlLayer.getMap() == this.map) {
+    this.kmlLayer.setMap(null);
   }
-  this.kmlLayer.setMap(mapValue);
 };
 var getArea = function(latLngSpan){
   return latLngSpan.lat() * latLngSpan.lng();
