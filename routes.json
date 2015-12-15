@@ -175,6 +175,11 @@
     "type": "transit"
   },
   {
+    "name": "septa-trolley",
+    "title": "SEPTA Trolleys",
+    "type": "transit"
+  },
+  {
     "name": "sle",
     "title": "Shore Line East",
     "type": "commuter"
