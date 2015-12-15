@@ -145,6 +145,11 @@
     "type": "transit"
   },
   {
+    "name": "patco",
+    "title": "PATCO Speedline",
+    "type": "transit"
+  },
+  {
     "name": "path",
     "title": "PATH",
     "type": "transit"
