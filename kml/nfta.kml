@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>nfta.kml</name>
+	<Style id="line-FF6666-3-nodesc-normal">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff6666ff</color>
+			<width>3</width>
+		</LineStyle>
+	</Style>
+	<StyleMap id="line-FF6666-3-nodesc">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#line-FF6666-3-nodesc-normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#line-FF6666-3-nodesc-highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="line-FF6666-3-nodesc-highlight">
+		<BalloonStyle>
+			<text><![CDATA[<h3>$[name]</h3>]]></text>
+		</BalloonStyle>
+		<LineStyle>
+			<color>ff6666ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Placemark>
+		<name>NFTA Metro Rail</name>
+		<styleUrl>#line-FF6666-3-nodesc</styleUrl>
+		<ExtendedData>
+		</ExtendedData>
+		<LineString>
+			<tessellate>1</tessellate>
+			<coordinates>
+				-78.819885,42.954868,0 -78.820847,42.953896,0 -78.82318100000001,42.95285,0 -78.825211,42.951828,0 -78.827888,42.949379,0 -78.862137,42.917614,0 -78.86443300000001,42.91531,0 -78.86505900000002,42.913715,0 -78.877792,42.875282,0 
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Document>
+</kml>

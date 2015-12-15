@@ -45,6 +45,11 @@
     "type": "transit"
   },
   {
+    "name": "gcrta",
+    "title": "RTA",
+    "type": "transit"
+  },
+  {
     "name": "grand-caynon",
     "title": "Grand Caynon Rail",
     "type": "commuter"
@@ -118,6 +123,11 @@
     "name": "nctd",
     "title": "NCTD",
     "type": "commuter"
+  },
+  {
+    "name": "nfta",
+    "title": "NFTA",
+    "type": "transit"
   },
   {
     "name": "nictd",
