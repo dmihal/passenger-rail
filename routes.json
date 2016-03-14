@@ -195,6 +195,11 @@
     "type": "commuter"
   },
   {
+    "name": "sun-link",
+    "title": "Sun Link",
+    "type": "transit"
+  },
+  {
     "name": "tide",
     "title": "The Tide",
     "type": "transit"
